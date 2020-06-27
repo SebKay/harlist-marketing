@@ -11,3 +11,7 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor
+  - gulpfile.js
+  - package.json
+  - README.md
+  - yarn.lock
