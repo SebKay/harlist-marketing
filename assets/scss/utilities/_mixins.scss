@@ -1,0 +1,30 @@
+@mixin rem($pixels) {
+    font-size: $pixels;
+    font-size: calculate_rem($pixels);
+}
+
+@mixin heading_sizes($h1, $h2, $h3, $h4, $h5, $h6) {
+    h1 {
+        @include rem($h1);
+    }
+
+    h2 {
+        @include rem($h2);
+    }
+
+    h3 {
+        @include rem($h3);
+    }
+
+    h4 {
+        @include rem($h4);
+    }
+
+    h5 {
+        @include rem($h5);
+    }
+
+    h6 {
+        @include rem($h6);
+    }
+}
