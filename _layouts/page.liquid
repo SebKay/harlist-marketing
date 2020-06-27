@@ -1,7 +1,11 @@
 {% include header.liquid %}
 
 {% if page.content != '' %}
-    {{ page.content | markdownify }}
+    <main class="main">
+        <div class="main__inner">
+            {{ page.content | markdownify }}
+        </div>
+    </main>
 {% endif %}
 
 {% include footer.liquid %}

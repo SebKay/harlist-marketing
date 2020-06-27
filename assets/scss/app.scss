@@ -4,6 +4,6 @@
 
 @import 'common/reset', 'common/typography';
 
-@import 'modules/header', 'modules/main';
+@import 'modules/header', 'modules/main', 'modules/footer';
 
-@import 'components/menu';
+@import 'components/menu', 'components/button';

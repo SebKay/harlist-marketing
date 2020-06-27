@@ -1,0 +1,25 @@
+.btn {
+    @extend %txt-upper;
+    @include rem(15px);
+    padding: 13px 26px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: $box-shadow-1;
+    border-radius: $border_radius_2;
+    background: $ui-color-1;
+    transition: background $transition-1;
+    // Type
+    line-height: normal;
+    color: #fff;
+}
+
+.btn:hover {
+    background: darken($ui-color-1, 8);
+    // Type
+    text-decoration: none;
+}
+
+.btn.btn--large {
+    @include rem(18px);
+    padding: 16px 29px;
+}
