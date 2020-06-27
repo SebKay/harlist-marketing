@@ -1,12 +1,24 @@
 $font-1: (
-    family : ('DM Sans', sans-serif),
+    family: (
+        "DM Sans",
+        sans-serif,
+    ),
     weights: (
-        regular : 400,
-        bold    : 700
-    )
+        regular: 400,
+        bold: 700,
+    ),
 );
 
 $font-base-size: 16px;
 $font-base-color: #4c4c4c;
 
 $ui-color-1: #4bc18b;
+$ui-color-2: #555555;
+$ui-color-2-1: #999999;
+
+$transition_speed: 0.35s;
+$border_radius: 8px;
+$border_radius_2: 5px;
+$box-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-2: 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.05);
+$transition-1: ease $transition-speed;

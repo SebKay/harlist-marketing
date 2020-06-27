@@ -1,0 +1,36 @@
+.header {
+    box-shadow: $box-shadow-2;
+    background: #fff;
+}
+
+.header__inner {
+    width: 92%;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.header__section {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.header__section.header__section--center {
+    // Type
+    text-align: center;
+}
+
+.header__section.header__section--right {
+    // Type
+    text-align: right;
+}
+
+.header__logo {
+    width: 100%;
+    max-width: 120px;
+    display: inline-block;
+}

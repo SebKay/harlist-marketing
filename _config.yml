@@ -3,6 +3,7 @@ title: Harlist
 description: Marketing site for https://www.harlist.io
 baseurl: ""
 url: ""
+app_url: "https://www.harlist.io"
 
 exclude:
   - .sass-cache/

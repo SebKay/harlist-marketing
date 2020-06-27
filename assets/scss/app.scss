@@ -3,3 +3,7 @@
 @import 'utilities/functions', 'utilities/mixins', 'utilities/placeholders';
 
 @import 'common/reset', 'common/typography';
+
+@import 'modules/header';
+
+@import 'components/menu';

@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+}
+
+.menu.menu--right {
+    justify-content: flex-end;
+}
+
+.menu__item {
+    @include rem(18px);
+    // Type
+    font-weight: map-get(map-get($font-1, weights), bold);
+    text-decoration: none;
+    color: $ui-color-2-1;
+
+    &:not(:last-child) {
+        margin-right: 15px;
+        padding-right: 15px;
+        content: '';
+        border-right: 2px solid $ui-color-2-1;
+    }
+}
