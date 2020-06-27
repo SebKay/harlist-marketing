@@ -10,15 +10,21 @@ h2,
 h3,
 h4,
 h5,
-h6,
-strong {
+h6 {
     // Type
-    font-weight: 600;
+    font-weight: 300;
+    line-height: 140%;
+    color: $ui-color-2-2;
 }
 
 p,
 li {
-    @include rem(16px);
+    @include rem(24px);
+}
+
+strong {
+    // Type
+    font-weight: 600;
 }
 
 a {
@@ -26,4 +32,4 @@ a {
     color: $ui-color-1;
 }
 
-@include heading_sizes(40px, 32px, 26px, 22px, 18px, 16px);
+@include heading_sizes(34px, 32px, 26px, 22px, 18px, 16px);

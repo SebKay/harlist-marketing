@@ -1,0 +1,21 @@
+.main {
+    width: 92%;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    // Type
+    text-align: center;
+}
+
+.main__inner {
+    padding-top: 6.5%;
+    padding-bottom: 6.5%;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 60px;
+    }
+}
