@@ -1,7 +1,5 @@
 .btn {
     @extend %txt-upper;
-    @include rem(15px);
-    padding: 13px 26px;
     display: inline-block;
     cursor: pointer;
     box-shadow: $box-shadow-1;
@@ -19,7 +17,27 @@
     text-decoration: none;
 }
 
-.btn.btn--large {
-    @include rem(18px);
-    padding: 16px 29px;
+//---- Responsive ----//
+@media screen and (min-width: 501px) {
+    .btn {
+        @include rem(15px);
+        padding: 13px 26px;
+    }
+
+    .btn.btn--large {
+        @include rem(18px);
+        padding: 16px 29px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .btn {
+        @include rem(13px);
+        padding: 10px 23px;
+    }
+
+    .btn.btn--large {
+        @include rem(16px);
+        padding: 14px 23px;
+    }
 }

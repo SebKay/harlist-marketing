@@ -17,6 +17,12 @@ h6 {
     color: $ui-color-2-2;
 }
 
+p,
+li {
+    // Type
+    line-height: 130%;
+}
+
 strong {
     // Type
     font-weight: 600;
@@ -43,11 +49,20 @@ a:hover {
     @include heading_sizes(34px, 26px, 22px, 18px, 16px, 14px);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 501px) {
     p,
     li {
         @include rem(20px);
     }
 
     @include heading_sizes(28px, 24px, 22px, 18px, 16px, 14px);
+}
+
+@media screen and (max-width: 500px) {
+    p,
+    li {
+        @include rem(16px);
+    }
+
+    @include heading_sizes(22px, 20px, 18px, 16px, 14px, 12px);
 }
