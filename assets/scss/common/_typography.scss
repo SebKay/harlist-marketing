@@ -17,11 +17,6 @@ h6 {
     color: $ui-color-2-2;
 }
 
-p,
-li {
-    @include rem(24px);
-}
-
 strong {
     // Type
     font-weight: 600;
@@ -38,4 +33,21 @@ a:hover {
     text-decoration: underline;
 }
 
-@include heading_sizes(34px, 32px, 26px, 22px, 18px, 16px);
+//---- Responsive ----//
+@media screen and (min-width: 1025px) {
+    p,
+    li {
+        @include rem(24px);
+    }
+
+    @include heading_sizes(34px, 26px, 22px, 18px, 16px, 14px);
+}
+
+@media screen and (max-width: 1024px) {
+    p,
+    li {
+        @include rem(20px);
+    }
+
+    @include heading_sizes(28px, 24px, 22px, 18px, 16px, 14px);
+}

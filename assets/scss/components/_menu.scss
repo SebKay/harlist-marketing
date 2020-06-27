@@ -7,16 +7,47 @@
 }
 
 .menu__item {
-    @include rem(18px);
     // Type
     font-weight: map-get(map-get($font-1, weights), bold);
     text-decoration: none;
     color: $ui-color-2-1;
 
     &:not(:last-child) {
-        margin-right: 15px;
-        padding-right: 15px;
         content: '';
         border-right: 2px solid $ui-color-2-1;
+    }
+}
+
+//---- Responsive ----//
+@media screen and (min-width: 1025px) {
+    .menu__item {
+        @include rem(18px);
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 501px) {
+    .menu__item {
+        @include rem(16px);
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .menu__item {
+        &:not(:last-child) {
+            margin-right: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu__item {
+        @include rem(12px);
+
+        &:not(:last-child) {
+            margin-right: 8px;
+            padding-right: 8px;
+            border-width: 1px;
+        }
     }
 }

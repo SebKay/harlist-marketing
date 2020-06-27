@@ -14,9 +14,23 @@
     h1 {
         margin-bottom: 20px;
     }
+}
 
-    .main__intro,
-    .main__media {
-        margin-bottom: 60px;
+//---- Responsive ----//
+@media screen and (min-width: 1025px) {
+    .main__inner {
+        .main__intro,
+        .main__media {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main__inner {
+        .main__intro,
+        .main__media {
+            margin-bottom: 40px;
+        }
     }
 }
