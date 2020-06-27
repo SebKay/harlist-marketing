@@ -1,0 +1,7 @@
+{% include header.liquid %}
+
+{% if page.content != '' %}
+    {{ page.content | markdownify }}
+{% endif %}
+
+{% include footer.liquid %}
