@@ -45,6 +45,7 @@ jobs:
         run: |
           bundle install
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          yarn install
           gulp build
         env:
           JEKYLL_ENV: production
