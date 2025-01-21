@@ -32,7 +32,6 @@ gulp.task('compile:styles', function () {
             Browserslist: ['>0.2%, last 2 versions, Firefox ESR, not dead']
         }))
         .pipe(plugins.rename({
-            suffix: ".min",
             extname: ".css"
         }))
         .pipe(gulp.dest(paths['sass']['dest']));
