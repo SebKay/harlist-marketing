@@ -1,0 +1,19 @@
+.button {
+    @apply rounded-full bg-twine-500 px-8 py-3 text-base sm:text-lg font-heading text-white inline-flex items-center gap-3 hover:bg-twine-800 transition-all ease-in-out duration-300 hover:scale-105 transform-gpu;
+}
+
+.button-full {
+    @apply w-full text-center justify-center;
+}
+
+.button-small {
+    @apply text-sm px-5 py-2;
+}
+
+.button-large {
+    @apply text-xl md:text-2xl px-8 py-3 md:px-10 md:py-4;
+}
+
+.button-secondary {
+    @apply bg-twine-200 text-twine-900 hover:bg-twine-300;
+}

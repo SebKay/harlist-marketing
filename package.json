@@ -1,18 +1,17 @@
 {
-    "name": "@sebkay/harlist-marketing",
-    "author": {
-        "name": "Seb Kay",
-        "email": "seb@sebkay.com",
-        "url": "https://sebkay.com"
-    },
-    "devDependencies": {
-        "gulp": "^4.0",
-        "gulp-append-prepend": "^1.0",
-        "gulp-autoprefixer": "^7.0",
-        "gulp-load-plugins": "^2.0",
-        "gulp-rename": "^2.0",
-        "gulp-rimraf": "^1.0",
-        "gulp-sass": "^6.0.0",
-        "sass": "^1.25"
-    }
+  "name": "handicraft-marketing",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.14"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
 }
