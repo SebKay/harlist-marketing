@@ -14,9 +14,9 @@ var plugins   = require('gulp-load-plugins')({
 var paths = {
     sass: {
         source: [
-            'assets/scss/**/*.scss'
+            './assets/scss/**/*.scss'
         ],
-        dest: 'assets/css/'
+        dest: './assets/css/'
     }
 };
 
