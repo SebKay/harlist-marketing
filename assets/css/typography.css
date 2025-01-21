@@ -10,5 +10,5 @@ h5,
 .h5,
 h6,
 .h6 {
-    @apply font-heading leading-tight text-twine-950;
+    @apply font-heading leading-tight text-neutral-950;
 }

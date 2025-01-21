@@ -7,8 +7,8 @@ export default {
 
     theme: {
         fontFamily: {
-            'text': ['Raleway', 'sans-serif'],
-            'heading': ['Noto Serif', 'serif'],
+            'text': ['DM Sans', 'sans-serif'],
+            'heading': ['DM Sans', 'sans-serif'],
         },
 
         fontSize: {
@@ -29,19 +29,7 @@ export default {
 
         extend: {
             colors: {
-                'twine': {
-                    '50': '#f9f5ed',
-                    '100': '#f0e6d1',
-                    '200': '#e2cea6',
-                    '300': '#d1ae73',
-                    '400': '#c49451',
-                    '500': '#b37e3f',
-                    '600': '#9a6334',
-                    '700': '#7c4a2c',
-                    '800': '#683e2b',
-                    '900': '#5a3529',
-                    '950': '#331c15',
-                },
+                'brand': '#4bc18b',
             },
 
             borderRadius: {
@@ -52,10 +40,6 @@ export default {
             boxShadow: {
                 'lg': '0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
             },
-
-            backgroundImage: ({ theme }) => ({
-                slanted: `linear-gradient(135deg, ${theme('colors.twine.50')}, ${theme('colors.twine.50')} 50%, ${theme('colors.twine.100')} 50%,${theme('colors.twine.100')})`,
-            }),
 
             maxWidth: {
                 'lg': '32.5rem', // 520px
