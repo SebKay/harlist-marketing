@@ -55,7 +55,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: |
-            _site/
             _site/assets/css/
 
   # Deployment job
