@@ -1,6 +1,0 @@
-//---- Calculate REM Value
-@function calculate_rem($pixels) {
-    $rem_size: $pixels / $font-base-size;
-
-    @return #{$rem_size}rem;
-}
