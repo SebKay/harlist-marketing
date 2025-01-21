@@ -6,7 +6,7 @@
         "url": "https://sebkay.com"
     },
     "devDependencies": {
-        "gulp": "^4.0",
+        "gulp": "^5.0",
         "gulp-append-prepend": "^1.0",
         "gulp-autoprefixer": "^7.0",
         "gulp-load-plugins": "^2.0",
