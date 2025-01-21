@@ -8,17 +8,8 @@ var sass      = require('gulp-sass')(require('sass'));
 var plugins   = require('gulp-load-plugins')({
     rename: {
         'gulp-append-prepend': 'gap',
-        'gulp-notify': 'notify'
     }
 });
-
-/**
- * Config
- */
-var notify_config = {
-    title: 'Harlist Marketing',
-    onLast: true
-};
 
 var paths = {
     sass: {
@@ -36,13 +27,7 @@ gulp.task('compile:styles', function () {
     return gulp.src(paths['sass']['source'])
         .pipe(sass({
             outputStyle: 'compressed'
-        })
-            .on("error", plugins.notify.onError({
-                title: 'Sass Error',
-                onLast: notify_config['onLast'],
-                message: "<%= error.message %>"
-            }))
-        )
+        }))
         .pipe(plugins.autoprefixer({
             Browserslist: ['>0.2%, last 2 versions, Firefox ESR, not dead']
         }))
@@ -50,12 +35,7 @@ gulp.task('compile:styles', function () {
             suffix: ".min",
             extname: ".css"
         }))
-        .pipe(gulp.dest(paths['sass']['dest']))
-        .pipe(plugins.notify({
-            title: notify_config['title'],
-            onLast: notify_config['onLast'],
-            message: "CSS compiled successfully"
-        }));
+        .pipe(gulp.dest(paths['sass']['dest']));
 });
 
 /**
