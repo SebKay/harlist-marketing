@@ -6,7 +6,6 @@
         "url": "https://sebkay.com"
     },
     "devDependencies": {
-        "dart-sass": "^1.25",
         "gulp": "^4.0",
         "gulp-append-prepend": "^1.0",
         "gulp-autoprefixer": "^7.0",
@@ -14,6 +13,7 @@
         "gulp-notify": "^3.2",
         "gulp-rename": "^2.0",
         "gulp-rimraf": "^1.0",
-        "gulp-sass": "^4.1"
+        "gulp-sass": "^6.0.0",
+        "sass": "^1.25"
     }
 }

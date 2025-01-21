@@ -4,8 +4,7 @@
  * Setup
  */
 var gulp      = require('gulp');
-var sass      = require('gulp-sass');
-sass.compiler = require('dart-sass');
+var sass      = require('gulp-sass')(require('sass'));
 var plugins   = require('gulp-load-plugins')({
     rename: {
         'gulp-append-prepend': 'gap',
